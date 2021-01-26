@@ -1,0 +1,283 @@
+.deportes:hover {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  color: green; }
+
+.politica:hover {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  color: indigo; }
+
+.rosario:hover {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  color: cyan; }
+
+.cultura:hover {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  color: orange; }
+
+.general:hover {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  color: dark; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: helvetica; }
+
+#menuprincipal li {
+  display: inline;
+  padding-left: 10px;
+  color: #FFFFFF; }
+
+.gradiente-negro-transparente {
+  background-image: linear-gradient(to bottom, black, transparent); }
+
+.opacidad-al-90 {
+  opacity: 90%; }
+
+#menuprincipal li:hover {
+  background-color: #8C9CFF; }
+
+#menuprincipal {
+  display: flex;
+  padding: 0;
+  width: 50vw;
+  min-width: 200px; }
+
+div.form {
+  padding-top: 100px; }
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 17%; }
+
+fieldset {
+  background-color: #8B7BFF; }
+
+#msg {
+  margin: 10px;
+  width: 236px;
+  height: 89px; }
+
+.grid {
+  display: grid; }
+
+#tablaqs {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  display: block;
+  text-align: center;
+  background-color: #D8D8D8; }
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  background-color: #D8D8D8; }
+
+.noticia {
+  display: inline-block;
+  position: relative; }
+
+.noticia__titulo {
+  background-color: #FFFFFF;
+  text-align: center; }
+
+.noticia__titulo--posicion {
+  position: absolute;
+  bottom: 0px; }
+
+.noticiaImgVertical img {
+  width: 40vw; }
+
+.notaEntera {
+  flex-wrap: wrap;
+  text-align: left; }
+
+.cuerpo {
+  width: 40vw;
+  min-width: 200px; }
+
+.parrafo {
+  color: #22DAE6;
+  text-align: justify; }
+
+/*.noticia__titulo:hover {
+ transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  color: blue; }*/
+.centrado {
+  text-align: center; }
+
+.noticia__volanta {
+  font-family: cambridge;
+  text-align: center;
+  font-size: 1rem;
+  z-index: 3;
+  color: #FFFFFF;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 1px;
+  width: 100%;
+  margin-right: 15px;
+  margin-left: 15px; }
+
+.carousel__imagen {
+  height: 92%;
+  object-fit: cover;
+  position: relative; }
+  .carousel__imagen .carousel__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    margin-right: auto;
+    margin-left: auto; }
+
+.carousel__imagen:after {
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.842174) 21%, rgba(2, 0, 36, 0.0410539) 34%);
+  padding-right: 15px;
+  padding-left: 15px;
+  opacity: 0.3;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s; }
+
+.noticia__imagen {
+  height: 92%;
+  object-fit: cover;
+  position: relative; }
+  .noticia__imagen .noticia__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    margin-right: auto;
+    margin-left: auto; }
+
+.noticia__imagen:after {
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.842174) 21%, rgba(2, 0, 36, 0.0410539) 34%);
+  padding-right: 15px;
+  padding-left: 15px;
+  opacity: 0.3;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s; }
+
+.noticia__imagen:hover:after {
+  opacity: 0.45; }
+
+.noticias-mas-leidas {
+  display: grid;
+  font-size: 0.9vw;
+  background-color: #D4D4D4;
+  margin-top: 10vw;
+  font-weight: bold;
+  min-height: 5vw;
+  max-height: 10vw; }
+
+.titulonota {
+  text-align: center; }
+
+.clima {
+  float: right;
+  padding-top: 1rem; }
+  .clima .clima img {
+    width: 10vw;
+    min-width: 5px; }
+
+.seccion {
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.seccion__titulo {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center; }
+
+.noticiaDeportiva {
+  padding-right: 2vw;
+  padding-left: 2vw;
+  width: 20vw;
+  font-size: 0.8vw;
+  min-width: 200px;
+  align-self: center; }
+  .noticiaDeportiva .noticiaDeportiva img {
+    padding-right: 2vw;
+    width: 20vw;
+    padding-top: 1vw;
+    min-width: 200px; }
+
+#bodydeportes {
+  margin-top: 4vw;
+  background-color: #66FF6A; }
+
+#noticias-deportes {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center; }
+
+#titulosecdep {
+  text-align: center;
+  align-items: center; }
+
+footer {
+  display: block;
+  background-color: #E5E5E5;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  body {
+    margin-left: 10vw;
+    margin-right: 10vw; } }
+
+@media (min-width: 573px) {
+  .carousel__imagen--altura {
+    height: 500px;
+    max-height: 50vh;
+    overflow: hidden;
+    object-fit: cover; }
+  .noticia__volanta {
+    font-size: 1.2rem; } }
+
+@media (min-width: 768px) {
+  .carousel__imagen--altura {
+    height: 700px;
+    overflow: hidden;
+    object-fit: cover; } }
+
+@media (min-width: 992px) {
+  .carousel__imagen--altura {
+    height: 750px;
+    object-fit: cover; } }
+
+@media (min-width: 1200px) {
+  .carousel__imagen--altura {
+    height: 800px;
+    object-fit: cover; }
+  .noticia__volanta {
+    font-size: 25px; } }
