@@ -1,27 +1,32 @@
 .deportes:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  border-color: green; }
+  border-color: green;
+  z-index: 10ti; }
 
 .politica:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  border-color: indigo; }
+  border-color: indigo;
+  z-index: 10ti; }
 
 .rosario:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  border-color: cyan; }
+  border-color: cyan;
+  z-index: 10ti; }
 
 .cultura:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  border-color: orange; }
+  border-color: orange;
+  z-index: 10ti; }
 
 .general:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  border-color: #000000; }
+  border-color: #000000;
+  z-index: 10ti; }
 
 * {
   padding: 0;
@@ -189,12 +194,14 @@ table {
   min-height: 5vw;
   max-height: 10vw; }
 
-.titulonota {
-  text-align: center; }
+.titulo-nota {
+  text-align: center;
+  padding-top: 1rem; }
 
 .clima {
   float: right;
-  padding-top: 1rem; }
+  padding-top: 4rem;
+  padding-bottom: 1rem; }
   .clima .clima img {
     width: 10vw;
     min-width: 5px; }

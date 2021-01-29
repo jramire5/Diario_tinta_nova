@@ -7,10 +7,7 @@ $fontdefault:helvetica;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     border-color: $color;
-
-
-
-
+    z-index: 10ti;
   }
 
 
@@ -193,14 +190,15 @@ table {
   min-height: 5vw;
   max-height: 10vw; }
 
-.titulonota {
-  text-align: center; }
+.titulo-nota {
+  text-align: center;
+  padding-top: 1rem; }
 
 .clima {
 
   float: right;
-  padding-top: 1rem; 
-
+  padding-top: 4rem;
+  padding-bottom: 1rem;
   .clima img {
 
     width: 10vw;
