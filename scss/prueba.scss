@@ -31,11 +31,10 @@ $fontdefault:helvetica;
 .gradiente-negro-transparente {
   background-image: linear-gradient(to bottom, black, transparent); }
 
-.opacidad-al-90 {
-  opacity: 90%; }
 
-#menuprincipal li:hover {
-  background-color: #8C9CFF; }
+
+.menuprincipal li:hover {
+  background-color: #B3B3B3; }
 
 #menuprincipal {
   display: flex;
