@@ -37,11 +37,8 @@
 .gradiente-negro-transparente {
   background-image: linear-gradient(to bottom, black, transparent); }
 
-.opacidad-al-90 {
-  opacity: 90%; }
-
-#menuprincipal li:hover {
-  background-color: #8C9CFF; }
+.menuprincipal li:hover {
+  background-color: #B3B3B3; }
 
 #menuprincipal {
   display: flex;
@@ -110,12 +107,9 @@ table {
   color: #22DAE6;
   text-align: justify; }
 
-/*.noticia__titulo:hover {
- transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-  color: blue; }*/
-.centrado {
-  text-align: center; }
+.noticias_relacionadas--img {
+  height: 12rem;
+  object-fit: cover; }
 
 .noticia__volanta {
   font-family: cambridge;
