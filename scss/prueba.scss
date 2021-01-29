@@ -1,12 +1,12 @@
 $fontdefault:helvetica;
-@each $categoria, $color  in (deportes, green), (politica, indigo), (rosario, cyan), (cultura, orange), (general, dark){
+@each $categoria, $color  in (deportes, green), (politica, indigo), (rosario, cyan), (cultura, orange), (general, #000000){
 
 
   .#{$categoria}:hover{
 
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
-    color: $color;
+    border-color: $color;
 
 
 
@@ -42,15 +42,17 @@ $fontdefault:helvetica;
   width: 50vw;
   min-width: 200px; }
 
-div.form {
- padding-top: 100px; }
-
-form {
+.formulario {
+ padding-top: 1rem;
+ margin-bottom: 3rem; 
+  .formulario form{
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  margin-bottom: 17%; }
+ 
+  }
+}
 
 fieldset {
   background-color: #8B7BFF; }
@@ -213,6 +215,7 @@ table {
   display: grid;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 100%;
    }
 
 .seccion__titulo {

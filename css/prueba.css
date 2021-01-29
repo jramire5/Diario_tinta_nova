@@ -1,27 +1,27 @@
 .deportes:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  color: green; }
+  border-color: green; }
 
 .politica:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  color: indigo; }
+  border-color: indigo; }
 
 .rosario:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  color: cyan; }
+  border-color: cyan; }
 
 .cultura:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  color: orange; }
+  border-color: orange; }
 
 .general:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  color: dark; }
+  border-color: #000000; }
 
 * {
   padding: 0;
@@ -46,15 +46,14 @@
   width: 50vw;
   min-width: 200px; }
 
-div.form {
-  padding-top: 100px; }
-
-form {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  margin-bottom: 17%; }
+.formulario {
+  padding-top: 1rem;
+  margin-bottom: 3rem; }
+  .formulario .formulario form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; }
 
 fieldset {
   background-color: #8B7BFF; }
@@ -203,7 +202,8 @@ table {
 .seccion {
   display: grid;
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 100%; }
 
 .seccion__titulo {
   font-size: 1.5rem;
