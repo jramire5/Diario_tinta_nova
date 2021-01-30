@@ -12,7 +12,6 @@
     "test": "test",
      "build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
 	 "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
   },
   "author": "",
   "license": "ISC"

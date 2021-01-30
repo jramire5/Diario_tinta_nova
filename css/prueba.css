@@ -4,6 +4,12 @@
   border-color: green;
   z-index: 10ti; }
 
+.argentina:hover {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  border-color: blue;
+  z-index: 10ti; }
+
 .politica:hover {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -131,12 +137,12 @@ table {
   margin-left: 15px; }
 
 .carousel__imagen {
-  height: 92%;
+  height: 93%;
   object-fit: cover;
   position: relative; }
   .carousel__imagen .carousel__imagen img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
     vertical-align: top;
     margin-right: auto;
@@ -230,9 +236,8 @@ table {
     padding-top: 1vw;
     min-width: 200px; }
 
-#bodydeportes {
-  margin-top: 4vw;
-  background-color: #66FF6A; }
+.body-deportes {
+  background-color: green; }
 
 #noticias-deportes {
   margin-left: 1vw;
@@ -251,14 +256,9 @@ footer {
   background-color: #E5E5E5;
   text-align: center; }
 
-@media (min-width: 768px) {
-  body {
-    margin-left: 10vw;
-    margin-right: 10vw; } }
-
 @media (min-width: 573px) {
   .carousel__imagen--altura {
-    height: 500px;
+    height: 600px;
     max-height: 50vh;
     overflow: hidden;
     object-fit: cover; }
@@ -266,6 +266,9 @@ footer {
     font-size: 1.2rem; } }
 
 @media (min-width: 768px) {
+  body {
+    margin-left: 10vw;
+    margin-right: 10vw; }
   .carousel__imagen--altura {
     height: 700px;
     overflow: hidden;
@@ -278,7 +281,7 @@ footer {
 
 @media (min-width: 1200px) {
   .carousel__imagen--altura {
-    height: 800px;
+    height: 900px;
     object-fit: cover; }
   .noticia__volanta {
     font-size: 25px; } }
