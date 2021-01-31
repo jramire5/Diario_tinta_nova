@@ -302,9 +302,11 @@ table {
   overflow: hidden;
   transition: .9s ease; }
 
+.nav a {
+  color: black; }
+
 footer {
   display: block;
-  background-color: #E5E5E5;
   text-align: center; }
 
 .icono {
