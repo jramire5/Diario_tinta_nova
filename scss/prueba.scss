@@ -258,8 +258,6 @@ right: 10vw;
 
 .borde-abajo{
   border-bottom: 0px $bordeColor;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 .body-deportes {
   padding-bottom: 1rem;
@@ -308,7 +306,10 @@ footer {
 .icono{
 height: 100%;
 }
-
+#main {
+  padding: 0px;
+  margin:0px;
+  }
 @media (min-width: 573px) {
   .carousel__imagen--altura {
     height: 573px;
@@ -328,6 +329,14 @@ height: 100%;
     overflow: hidden;
     object-fit: cover;
  } 
+
+}
+
+@media (min-width: 992px) {
+  .carousel__imagen--altura {
+    height: 992*0.8px;
+    object-fit: cover;
+  } 
 .borde-derecha{
   border-right: 2px $bordeColor;
 }
@@ -336,14 +345,9 @@ height: 100%;
 }
 .borde-abajo{
   border-bottom: 3px $bordeColor;
-}
-}
-
-@media (min-width: 992px) {
-  .carousel__imagen--altura {
-    height: 992*0.8px;
-    object-fit: cover;
-  } }
+    margin-left: 10px;
+  margin-right: 10px;
+}}
 
 @media (min-width: 1200px) {
   .carousel__imagen--altura {

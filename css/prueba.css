@@ -269,9 +269,7 @@ table {
   right: 10vw; }
 
 .borde-abajo {
-  border-bottom: 0px solid white;
-  margin-left: 10px;
-  margin-right: 10px; }
+  border-bottom: 0px solid white; }
 
 .body-deportes {
   padding-bottom: 1rem;
@@ -322,6 +320,10 @@ footer {
 .icono {
   height: 100%; }
 
+#main {
+  padding: 0px;
+  margin: 0px; }
+
 @media (min-width: 573px) {
   .carousel__imagen--altura {
     height: 573px;
@@ -338,18 +340,20 @@ footer {
   .carousel__imagen--altura {
     height: 614.4px;
     overflow: hidden;
+    object-fit: cover; } }
+
+@media (min-width: 992px) {
+  .carousel__imagen--altura {
+    height: 793.6px;
     object-fit: cover; }
   .borde-derecha {
     border-right: 2px solid white; }
   .borde-izquierda {
     border-left: 2px solid white; }
   .borde-abajo {
-    border-bottom: 3px solid white; } }
-
-@media (min-width: 992px) {
-  .carousel__imagen--altura {
-    height: 793.6px;
-    object-fit: cover; } }
+    border-bottom: 3px solid white;
+    margin-left: 10px;
+    margin-right: 10px; } }
 
 @media (min-width: 1200px) {
   .carousel__imagen--altura {
