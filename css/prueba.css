@@ -186,28 +186,29 @@ table {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */ }
 
+.card {
+  padding: 0px; }
+
 .noticia__imagen {
   height: 92%;
-  object-fit: cover;
-  position: relative; }
+  width: 100%;
+  object-fit: cover; }
   .noticia__imagen .noticia__imagen img {
+    padding: 0px;
+    margin: 0px;
     width: 100%;
-    height: 100%;
+    height: 92%;
     object-fit: cover;
-    vertical-align: top;
-    margin-right: auto;
-    margin-left: auto; }
+    vertical-align: center; }
 
 .noticia__imagen:after {
   content: '\A';
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 92%;
   top: 0;
   left: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.842174) 7%, rgba(2, 0, 36, 0.0410539) 14%);
-  padding-right: 15px;
-  padding-left: 15px;
   opacity: 0.45;
   transition: all 0.5s;
   -webkit-transition: all 0.5s; }
@@ -288,7 +289,6 @@ table {
   align-items: center; }
 
 .imagen-zoom-in {
-  padding-top: 3px;
   -webkit-transition: all .9s ease;
   /* Safari y Chrome */
   -moz-transition: all .9s ease;
