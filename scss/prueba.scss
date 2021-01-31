@@ -202,10 +202,7 @@ table {
   padding-top: 1rem; }
 
 .clima {
-position: absolute;
-
-top: 5vw;
-right: 10vw;
+float: right;
 
   .clima img {
 
@@ -303,8 +300,7 @@ footer {
   background-color: #E5E5E5;
   text-align: center; }
 .icono{
-position: relative;
-height: 1rem;
+height: 100%;
 }
 
 @media (min-width: 768px) {
