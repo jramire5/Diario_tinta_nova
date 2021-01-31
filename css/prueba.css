@@ -232,7 +232,8 @@ table {
   width: 100%; }
 
 .seccion__titulo {
-  font-size: 1.5rem;
+  color: green;
+  font-size: 3rem;
   display: block;
   text-align: center; }
 
