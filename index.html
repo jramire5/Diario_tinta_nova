@@ -10,11 +10,11 @@
 	<title>Diario Tinta Nova</title>
 	<meta name="author" content="Juan Nicolas Ramirez">
 	<meta name="description"
-   content="Diario digital rosarino">
+   content="Diario digital rosarino, hecho por estudiantes y jóvenes profesionales, con ganas y pasión ">
+   <meta name="copyright" content="diariotintanova®">
 	<meta name="keywords"
-   content="Diario digital, Rosario, noticias">
-   <link rel="icon" href="img/favicon.ico">
-
+   content="Diario digital, Rosario, noticias, medio independiente">
+	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/prueba.css">
 
@@ -26,10 +26,10 @@
 
 	<body>
 	<div id="main">
-		<a href="index.html"><img class="col-md-4 col-sm-12" src="img/logo.png" alt="Logo diario tinta nova" ></a>
+		<a class="inicio" href="index.html"><img class="col-md-4 col-sm-12" src="img/logo.png" alt="Logo diario tinta nova" ></a>
 			
 		<!-- weather widget start -->
-		<a class="d-none d-md-none d-lg-inline col-lg-3" target="_blank" href="https://hotelmix.es/weather/rosario-19474"><img class="clima" src="https://w.bookcdn.com/weather/picture/30_19474_1_4_9b59b6_250_8e44ad_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=53203" alt="booked.net"/>
+		<a class="d-none d-md-none d-lg-inline col-lg-3 clima" target="_blank" href="https://hotelmix.es/weather/rosario-19474"><img class="clima" src="https://w.bookcdn.com/weather/picture/30_19474_1_4_9b59b6_250_8e44ad_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=53203" alt="booked.net"/>
 		</a><!-- weather widget end -->
 		
 		<div>
@@ -59,25 +59,22 @@
 		      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
 		    </ol>
 		    <div class="carousel-inner">
-		      <div class="carousel-item active">
-		        <img src="img/abortolegal.jpg" class="d-block w-100 carousel__imagen--altura" alt="Festejos por el aborto">
+		      <div class="carousel-item  active">
+		        <img src="img/abortolegal.jpg" class="d-block w-100  carousel__imagen--altura" alt="Festejos por el aborto" >
 		        <div class="carousel-caption d-none d-md-block">
-		          <h5>Es Ley</h5>
 		          <h3>Tras una sesión histórica el Senado aprobó la ley del aborto legal, seguro y gratuito</h3>
 		        </div>
 		      </div>
 
 		      <div class="carousel-item">
-		        <img src="img/idiomagratis.jpeg" class="d-block w-100 carousel__imagen--altura" alt="Hombre de juguete en un mundo">
+		        	<img src="img/idiomagratis.jpeg" class="d-block w-100  carousel__imagen--altura" alt="Hombre de juguete en un mundo">
 		        <div class="carousel-caption d-none d-md-block">
-		          <h5>Un posible objetivo</h5>
 		          <h3>Aprendé gratis un idioma para este 2021</h3>
 		        </div>
 		      </div>
 		      <div class="carousel-item">
-		        <img src="img/2021.jpg" class="d-block w-100 carousel__imagen--altura" alt="logo del 2021 con confeti dorado">
+		        <img src="img/2021.jpg" class="d-block w-100  carousel__imagen--altura" alt="logo del 2021 con confeti dorado">
 		        <div class="carousel-caption">
-		          <h5>Se viene el año nuevo</h5>
 		          <h3>Esperando el 2021: Tradiciones para atraer lo que deseas</h3>
 		        </div>
 		      </div>
@@ -121,7 +118,7 @@
 			<div class="row card-deck">
 				<div class="card col-sm-12 col-md-6 col-xl-4 general mb-4" id="nota3">
 					<div class="noticia__imagen">
-						<img class="noticia__imagen card-img-top" src="img/chriscorriendo.png" alt="Chris completando el Ironman" >
+						<img class="noticia__imagen card-img-top" src="img/chriscorriendo.png" alt="Chris completando el Ironman" data-toggle="tooltip" data-placement="top" title="Tooltip on top" >
 					</div>
 					<div class="container">
 						<h5 class="noticia__volanta container"> Meta cumplida</h5>
@@ -157,29 +154,32 @@
 		</div>
 
 
-			<div class="deportes card mb-4"> <!---Sección deportes"-->
-					<a href="secciondeportes.html"><h2 class="seccion__titulo">Deportes</h2>
-					</a>
+			<div href="secciondeportes.html" class="deportes card mb-4"> <!---Sección deportes"-->
+				<h2 class="seccion__titulo">Deportes</h2>
 						
 				<div class="seccion col-12 deportes" >
 					<div class="row card-deck">
 						<div class="card col-12 col-md-4 deportes" >
-							<img class="card-img-top" src="img/central-godoy-cruz.jpg" alt="imagen del partido" >
-							<h5>Busca ganar ante el último, Godoy Cruz</h5>
-							<h3>Central viaja a Mendoza</h3>
+							<img class="card-img-top noticia__imagen" src="img/central-godoy-cruz.jpg" alt="imagen del partido" >
+							<div class="card-body">
+								<h5 class="card-text">Busca ganar ante el último, Godoy Cruz</h5>
+								<h3 class="card-title">Central viaja a Mendoza</h3>
+							</div>
 						</div>
 						
 						<div class="card col-12 col-md-4 deportes">
-							<img class="card-img-top " src="img/palaciosnob.jpg" alt="palacios gambeteando ante boca">
-							<h5 class="card-text">La fase reválida, lo que se viene</h5>
-							<h3 class="card-title">Dura derrota de Newells</h3>
+							<img class="card-img-top noticia__imagen" src="img/palaciosnob.jpg" alt="palacios gambeteando ante boca">
+							<div class="card-body">
+								<h5 class="card-text">La fase reválida, lo que se viene</h5>
+								<h3 class="card-title">Dura derrota de Newells</h3>
+							</div>
 						</div>
 
-						<div class="card col-12 col-sm-12 col-md-4 deportes">
-						  <img class="card-img-top" src="img/messimaradona.jpg" alt="Card image cap">
+						<div class="card col-12 col-md-4 deportes">
+						  <img class="card-img-top noticia__imagen" src="img/messimaradona.jpg" alt="Card image cap">
 						  <div class="card-body">
 						    <h5 class="card-title">Del 10 al d10s</h5>
-						    <h3 class="card-text">El espectacular homenaje de Messi a Maradona</h3>
+						    <h3 class="card-text">El homenaje de Messi al Diego</h3>
 						  </div>
 						</div>
 					</div>

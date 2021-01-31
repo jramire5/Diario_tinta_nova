@@ -1,13 +1,16 @@
 $fontdefault:helvetica;
+$bordeColor: solid white;
+
 @each $categoria, $color  in (deportes, green), (argentina, blue), (politica, indigo), (rosario, cyan), (cultura, orange), (general, #000000){
 
 
   .#{$categoria}:hover{
 
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    transition: all 0.9s;
+    -webkit-transition: all 0.9s;
     border-color: $color;
-    z-index: 10ti;
+    border-width: 1.2px;
+    z-index: 10;
   }
 
 
@@ -119,7 +122,7 @@ table {
   margin-left: 15px; }
 
 .carousel__imagen {
-  height: 93%;
+  height: 100%;
   object-fit: cover;
   position:relative; 
   .carousel__imagen img{
@@ -132,20 +135,24 @@ table {
   }
 }
 
-.carousel__imagen:after {
-   content: '\A';
+.carousel-caption {
+  padding-top: 250px;
   position: absolute;
+  bottom: 0px;
+  left: 0px;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.842174) 21%, rgba(2, 0, 36, 0.0410539) 34%);
-  padding-right: 15px;
-  padding-left: 15px;
-  opacity: 0.3;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+    text-align: center;
+    color: white;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */ 
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 25%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 25%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 25%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 25%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
 }
+
 
 .noticia__imagen {
   height: 92%;
@@ -195,14 +202,14 @@ table {
   padding-top: 1rem; }
 
 .clima {
+position: absolute;
 
-  float: right;
-  padding-top: 4rem;
-  padding-bottom: 1rem;
+top: 5vw;
+right: 10vw;
+
   .clima img {
 
-    width: 10vw;
-
+    width: 5rem;
     min-width: 5px;
 
     }
@@ -232,15 +239,31 @@ table {
   padding-right: 2vw;
   width: 20vw;
   padding-top: 1vw;
-  min-width: 200px; 
+  min-width: 200px;
+
     }
   }
+  .borde-izquierda,
+  .borde-derecha
+  {
+    margin-bottom: 10px;}
+.derecha{
+position: absolute;
+right: 10vw;
 
+}
 
-
+.borde-abajo{
+  border-bottom: 0px $bordeColor;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .body-deportes {
+  padding-bottom: 1rem;
+  padding-top: 6rem;
+  margin-bottom: 5rem;
+  width: 100%;
   background-color: green; }
-
 #noticias-deportes {
   margin-left: 1vw;
   margin-right: 1vw;
@@ -249,14 +272,40 @@ table {
   align-content: center;
   align-items: center; }
 
-#titulosecdep {
-  text-align: center;
-  align-items: center; }
+.imagen-deportiva {
+padding-top: 3px;
+-webkit-transition:all .9s ease; /* Safari y Chrome */
+-moz-transition:all .9s ease; /* Firefox */
+-o-transition:all .9s ease; /* IE 9 */
+-ms-transition:all .9s ease; /* Opera */
+overflow: hidden;
+position: relative;
+height: 99%; 
+object-fit: cover;
+
+.imagen-deportiva img{
+  height: 100%;
+  padding-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+} }
+
+.imagen-deportiva :hover{
+
+transform:scale(1.25);
+overflow: hidden;
+transition: .9s ease;
+
+}
 
 footer {
   display: block;
   background-color: #E5E5E5;
   text-align: center; }
+.icono{
+position: relative;
+height: 1rem;
+}
 
 @media (min-width: 768px) {
  }
@@ -268,25 +317,40 @@ footer {
     overflow: hidden;
     object-fit: cover; } 
     .noticia__volanta {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; } 
+  }
 
 @media (min-width: 768px) {
-  body {
+  #main {
     margin-left: 10vw;
     margin-right: 10vw; }
   .carousel__imagen--altura {
     height: 700px;
     overflow: hidden;
-    object-fit: cover; } }
+    object-fit: cover;
+ } 
+.borde-derecha{
+  border-right: 2px $bordeColor;
+}
+.borde-izquierda{
+  border-left: 2px $bordeColor;
+}
+.borde-abajo{
+  border-bottom: 3px $bordeColor;
+}
+}
 
 @media (min-width: 992px) {
   .carousel__imagen--altura {
     height: 750px;
-    object-fit: cover; } }
+    object-fit: cover;
+  } }
 
 @media (min-width: 1200px) {
   .carousel__imagen--altura {
     height: 900px;
+    min-height: 50vh;
     object-fit: cover; } 
   .noticia__volanta {
-    font-size: 25px; }}
+    font-size: 25px; }
+}
