@@ -9,8 +9,9 @@ $bordeColor: solid white;
     transition: all 0.9s;
     -webkit-transition: all 0.9s;
     border-color: $color;
-    border-width: 1.2px;
+    border-width: 1.1px;
     z-index: 10;
+    box-shadow: 0 1px 1px 0 $color, 0 2px 2px 0 $color;
   }
 
 
@@ -122,18 +123,21 @@ table {
   margin-left: 15px; }
 
 .carousel__imagen {
-  height: 100%;
   object-fit: cover;
   position:relative; 
   .carousel__imagen img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    vertical-align:top;
+  object-fit: cover;
+  vertical-align:top;
   margin-right: auto;
   margin-left: auto;
   }
 }
+.carousel__imagen--altura {
+    height: 573/5*4px;
+    max-height: 50vh;
+    overflow: hidden;
+    object-fit: cover; }
+
 
 .carousel-caption {
   padding-top: 250px;
@@ -175,17 +179,17 @@ table {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.842174) 21%, rgba(2, 0, 36, 0.0410539) 34%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.842174) 7%, rgba(2, 0, 36, 0.0410539) 14%);
   padding-right: 15px;
   padding-left: 15px;
-  opacity: 0.3;
+  opacity: 0.45;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
 
 
 .noticia__imagen:hover:after {
-    opacity:0.45;
+    opacity:0.7;
 }
 
 .noticias-mas-leidas {
@@ -270,7 +274,7 @@ right: 10vw;
   align-content: center;
   align-items: center; }
 
-.imagen-deportiva {
+.imagen-zoom-in {
 padding-top: 3px;
 -webkit-transition:all .9s ease; /* Safari y Chrome */
 -moz-transition:all .9s ease; /* Firefox */
@@ -281,14 +285,14 @@ position: relative;
 height: 99%; 
 object-fit: cover;
 
-.imagen-deportiva img{
+.imagen-zoom-in img{
   height: 100%;
   padding-bottom: auto;
   margin-left: auto;
   margin-right: auto;
 } }
 
-.imagen-deportiva :hover{
+.imagen-zoom-in :hover{
 
 transform:scale(1.25);
 overflow: hidden;
@@ -305,12 +309,9 @@ footer {
 height: 100%;
 }
 
-@media (min-width: 768px) {
- }
-
 @media (min-width: 573px) {
   .carousel__imagen--altura {
-    height: 600px;
+    height: 573px;
     max-height: 50vh;
     overflow: hidden;
     object-fit: cover; } 
@@ -323,7 +324,7 @@ height: 100%;
     margin-left: 10vw;
     margin-right: 10vw; }
   .carousel__imagen--altura {
-    height: 700px;
+    height: 768*0.8px;
     overflow: hidden;
     object-fit: cover;
  } 
@@ -340,13 +341,13 @@ height: 100%;
 
 @media (min-width: 992px) {
   .carousel__imagen--altura {
-    height: 750px;
+    height: 992*0.8px;
     object-fit: cover;
   } }
 
 @media (min-width: 1200px) {
   .carousel__imagen--altura {
-    height: 900px;
+    height: 1200*0.9px;
     min-height: 50vh;
     object-fit: cover; } 
   .noticia__volanta {
